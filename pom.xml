@@ -45,12 +45,6 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-<!--                    <properties>-->
-<!--                        <property>-->
-<!--                            <name>listener</name>-->
-<!--                            <value>io.qameta.allure.junit4.AllureJunit4</value>-->
-<!--                        </property>-->
-<!--                    </properties>-->
 
                 </configuration>
                 <dependencies>
@@ -72,8 +66,6 @@
                     <installDirectory>${basedir}</installDirectory>
                     <reportDirectory>${basedir}/allure-report/</reportDirectory>
                     <resultsDirectory>${basedir}/allure-results/</resultsDirectory>
-<!--                    <resultsDirectory>${project.build.directory}/allure-results/</resultsDirectory>-->
-<!--                    <reportDirectory>${project.build.directory}/allure-reports/</reportDirectory>-->
                     <reportingOutputDirectory>${project.build.directory}/target/site/</reportingOutputDirectory>
                     <outputDirectory>${basedir}/site/</outputDirectory>
                     <inputDirectories>${project.build.directory}</inputDirectories>
@@ -90,7 +82,6 @@
 
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -105,7 +96,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -119,7 +109,6 @@
             <version>${org.testng.version}</version>
             <scope>compile</scope>
         </dependency>
-
 
         <dependency>
             <groupId>org.assertj</groupId>
@@ -128,7 +117,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>

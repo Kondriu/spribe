@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API Tests" verbose="2" annotations="JDK">
+    <test name="Spribe player controller test"  parallel = "classes" thread-count = "3">
+        <classes>
+            <class name="org.spribe.GetAllPlayersTest" />
+            <class name="org.spribe.GetPlayerByPlayerIdTest" />
+            <class name="org.spribe.CreatePlayerTest" />
+            <class name="org.spribe.DeletePlayerTest" />
+            <class name="org.spribe.UpdatePlayerTest" />
+        </classes>
+    </test>
+
+</suite>
